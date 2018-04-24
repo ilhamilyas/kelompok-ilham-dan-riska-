@@ -1,22 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class falppy here.
+ * Write a description of class pesawat here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class falppy extends Actor
+public class pesawat extends Actor
 {
-    /**
-     * Act - do whatever the falppy wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+   private int jeda=0;
+   private boolean toRemove=false;
     public void act() 
     {
-        // Add your action code here.
-        
-        
         if (Greenfoot.isKeyDown("up")){
         setLocation(getX(),getY()-5);
         }
@@ -29,5 +24,8 @@ public class falppy extends Actor
         if (Greenfoot.isKeyDown("right")){
         setLocation(getX()+5,getY());
         }
-}
+        if(jeda>0)jeda--;
+        if(jeda==1)getWorld().addObject(new peluru(), getX()+100,getY());
+        if(jeda==0)jeda=5;
+    }    
 }

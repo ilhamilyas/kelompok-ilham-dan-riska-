@@ -1,0 +1,18 @@
+#Greenfoot properties
+#Mon Apr 23 22:44:00 PDT 2018
+class.latar.image=space.jpg
+class.pesawat.superclass=greenfoot.Actor
+class.ledakan.superclass=greenfoot.Actor
+class.peluru.superclass=greenfoot.Actor
+mainWindow.width=850
+class.musuh.superclass=greenfoot.Actor
+class.musuh.image=rocket.png
+project.charset=UTF-8
+version=3.0.0
+class.pesawat.image=airplane.png
+world.lastInstantiated=latar
+mainWindow.y=40
+mainWindow.x=40
+class.latar.superclass=greenfoot.World
+class.pecahan.superclass=greenfoot.Actor
+mainWindow.height=600
