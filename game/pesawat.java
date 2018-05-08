@@ -24,8 +24,6 @@ public class pesawat extends Actor
         if (Greenfoot.isKeyDown("right")){
         setLocation(getX()+5,getY());
         }
-<<<<<<< HEAD:Selamatkan Sang Kekasih/falppy.java
-<<<<<<< HEAD:game/pesawat.java
         if(jeda>0)jeda--;
         if(jeda==1)getWorld().addObject(new peluru(), getX()+100,getY());
         if(jeda==0)jeda=5;
@@ -40,13 +38,4 @@ public class pesawat extends Actor
     }  
     
    
-=======
-}
->>>>>>> parent of fc6a298... pertama:Selamatkan Sang Kekasih/falppy.java
-=======
-        if(jeda>0)jeda--;
-        if(jeda==1)getWorld().addObject(new peluru(), getX()+100,getY());
-        if(jeda==0)jeda=5;
-    }    
->>>>>>> b5d137bcb77977fd155f60c56efed87e3ba8bb17:game/pesawat.java
 }
