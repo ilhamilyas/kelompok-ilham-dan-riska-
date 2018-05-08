@@ -9,5 +9,12 @@ comment3.target=void\ addedToWorld(greenfoot.World)
 comment4.params=
 comment4.target=void\ move()
 comment5.params=
+<<<<<<< HEAD
+comment5.target=void\ ledakan()
+comment6.params=
+comment6.target=void\ act()
+numComments=7
+=======
 comment5.target=void\ act()
 numComments=6
+>>>>>>> b5d137bcb77977fd155f60c56efed87e3ba8bb17

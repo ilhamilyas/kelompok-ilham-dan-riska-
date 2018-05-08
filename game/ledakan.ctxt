@@ -1,7 +1,15 @@
 #BlueJ class context
 comment0.target=ledakan
+<<<<<<< HEAD
+comment1.params=Latar
+comment1.target=void\ addToWorld(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+numComments=3
+=======
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ ledakan\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ ledakan\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 numComments=2
+>>>>>>> b5d137bcb77977fd155f60c56efed87e3ba8bb17

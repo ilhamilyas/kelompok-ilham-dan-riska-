@@ -1,0 +1,9 @@
+diff a/game/pecahan.java b/game/pecahan.java	(rejected hunks)
+@@ -4,6 +4,6 @@
+     
+     public void act() 
+     {
+-        / Add your action code here.
++        // Add your action code here.
+     }    
+ }
