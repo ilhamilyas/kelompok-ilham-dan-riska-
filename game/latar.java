@@ -1,11 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class latar here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class latar extends World
 {
     skor Skor = new skor("skor: "); 
@@ -24,10 +19,10 @@ public class latar extends World
     public void act()
     {
         if(jeda>0)jeda--;
-        else jeda=50;
+        else jeda=100;
         if(jeda==1){
-        int py=Greenfoot.getRandomNumber (getHeight());
-        addObject (new musuh(-(Greenfoot.getRandomNumber (3))), getWidth()+100,py);
+        int randomHeight=Greenfoot.getRandomNumber (getHeight());
+        addObject (new musuh(-(Greenfoot.getRandomNumber (90))), getWidth()+100,randomHeight);
         }
     }
     public void tambah(){

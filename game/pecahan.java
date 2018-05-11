@@ -1,7 +1,6 @@
 import greenfoot.*;
 public class pecahan extends Actor
 {
-<<<<<<< HEAD
     public int vx=0,vy=1,rot=2;
     public pecahan(GreenfootImage img)
     {
@@ -25,11 +24,5 @@ public class pecahan extends Actor
         if(getX()<-200 || getY()<-200|| getX()>getWorld().getWidth()+200 || getY()>getWorld().getHeight()+200){
         getWorld().removeObject(this);
         }
-=======
-    
-    public void act() 
-    {
-        // Add your action code here.
->>>>>>> b5d137bcb77977fd155f60c56efed87e3ba8bb17
     }    
 }

@@ -10,8 +10,13 @@ public class pesawat extends Actor
 {
    private int jeda=0;
    private boolean toRemove=false;
+   int skor;
+   
     public void act() 
     {
+       
+             
+         tembak();
         if (Greenfoot.isKeyDown("up")){
         setLocation(getX(),getY()-5);
         }
@@ -24,9 +29,9 @@ public class pesawat extends Actor
         if (Greenfoot.isKeyDown("right")){
         setLocation(getX()+5,getY());
         }
-        if(jeda>0)jeda--;
-        if(jeda==1)getWorld().addObject(new peluru(), getX()+100,getY());
-        if(jeda==0)jeda=5;
+        //if(jeda>0)jeda--;
+        //if(jeda==1)getWorld().addObject(new peluru(), getX()+100,getY());
+        //if(jeda==0)jeda=5;
    
      if (getOneIntersectingObject(musuh.class)!=null){
         Greenfoot.stop ();
@@ -35,7 +40,16 @@ public class pesawat extends Actor
         getWorld().getHeight()/2);
         
         }
-    }  
-    
+
+    }
    
+    public void tembak () {
+            if (Greenfoot.isKeyDown("space")){
+            if(jeda>0)jeda--;
+            if(jeda==1) getWorld().addObject(new peluru(),getX(),getY());
+            if(jeda==0)jeda=12;
+        }
+    }
+    
+
 }
