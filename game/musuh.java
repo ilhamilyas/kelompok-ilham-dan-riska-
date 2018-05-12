@@ -23,7 +23,7 @@ public class musuh extends Actor
         
     public void gerak()
     {
-        move(-5);
+        move(-7);
     }
     
     public void ledakan()
@@ -45,6 +45,9 @@ public class musuh extends Actor
          latar my =(latar)getWorld();        
         if (isTouching(peluru.class)){
          kenatembak();
+        }
+        if (isTouching(peluru.class)){
+        ((latar)getWorld()).tambah();
         }
         
         if(!toRemove)gerak();

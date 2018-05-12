@@ -10,7 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class peluru extends Actor 
 {
     private boolean toRemove=false;
-    private int vx=3;
+  
    
     public void act() 
     {
@@ -25,7 +25,11 @@ public class peluru extends Actor
         if (isAtEdge()){
             latar mw = (latar) getWorld();
             mw.removeObject(this);
-        
         }
+        
+       
+        
+        
     }    
 }
+
