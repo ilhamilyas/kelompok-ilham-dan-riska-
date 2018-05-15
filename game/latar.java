@@ -10,7 +10,7 @@ public class latar extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
         super(600, 400, 1,false);
-        addObject(Skor,300,20);
+        addObject(Skor,565,20);
         
               
         addObject (new pesawat(), 100,200);

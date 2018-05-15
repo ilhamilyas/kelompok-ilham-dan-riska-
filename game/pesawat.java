@@ -32,12 +32,16 @@ public class pesawat extends Actor
         //if(jeda>0)jeda--;
         //if(jeda==1)getWorld().addObject(new peluru(), getX()+100,getY());
         //if(jeda==0)jeda=5;
-   
-     if (getOneIntersectingObject(musuh.class)!=null){
+     
+     if (isTouching(musuh.class)){
         Greenfoot.stop ();
         getWorld().addObject(new gagal(),
         getWorld().getWidth()/2,
         getWorld().getHeight()/2);
+        getWorld().addObject(new playagain(),
+        getWorld().getWidth()/2,
+        getWorld().getHeight()/1-150);
+        
         
         }
 
