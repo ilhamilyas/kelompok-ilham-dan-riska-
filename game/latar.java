@@ -9,8 +9,8 @@ public class latar extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
-        super(600, 400, 1,false);
-        addObject(Skor,565,20);
+        super(800, 500, 1,false);
+        addObject(Skor,756,20);
         
               
         addObject (new pesawat(), 100,200);
@@ -19,14 +19,18 @@ public class latar extends World
     public void act()
     {
         if(jeda>0)jeda--;
-        else jeda=100;
+        else jeda=25;
         if(jeda==1){
         int randomHeight=Greenfoot.getRandomNumber (getHeight());
         addObject (new musuh(-(Greenfoot.getRandomNumber (90))), getWidth()+100,randomHeight);
         }
+        
     }
     public void tambah(){
         Skor.add(5);
-    }     
+    
+    }
+    
+    
    
 }

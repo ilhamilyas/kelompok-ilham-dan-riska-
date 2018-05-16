@@ -51,7 +51,7 @@ public class pesawat extends Actor
             if (Greenfoot.isKeyDown("space")){
             if(jeda>0)jeda--;
             if(jeda==1) getWorld().addObject(new peluru(),getX()+50,getY());
-            if(jeda==0)jeda=12;
+            if(jeda==0)jeda=5;
         }
     }
     
