@@ -9,9 +9,16 @@ public class latar extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
+<<<<<<< HEAD
         super(600, 400, 1,true);
         addObject(Skor,300,20);
 
+=======
+        super(800, 500, 1,false);
+        addObject(Skor,756,20);
+        
+              
+>>>>>>> 637744871217aca2f65cb05ecfc832e07ae00fa6
         addObject (new pesawat(), 100,200);
         prepare();
     }
@@ -20,15 +27,17 @@ public class latar extends World
     public void act()
     {
         if(jeda>0)jeda--;
-        else jeda=100;
+        else jeda=25;
         if(jeda==1){
             int randomHeight=Greenfoot.getRandomNumber (getHeight());
             addObject (new musuh(-(Greenfoot.getRandomNumber (90))), getWidth()+100,randomHeight);
         }
+        
     }
 
     public void tambah(){
         Skor.add(5);
+<<<<<<< HEAD
     }  
 
     /**
@@ -38,6 +47,13 @@ public class latar extends World
     private void prepare()
     {
     }
+=======
+    
+    }
+    
+    
+   
+>>>>>>> 637744871217aca2f65cb05ecfc832e07ae00fa6
 }
    
 

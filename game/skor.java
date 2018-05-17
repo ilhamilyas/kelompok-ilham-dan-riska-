@@ -55,5 +55,6 @@ public class skor extends Actor
         GreenfootImage image = getImage();
         image.clear();
         image.drawString(text + value, 1, 18);
+        
     }  
 }
