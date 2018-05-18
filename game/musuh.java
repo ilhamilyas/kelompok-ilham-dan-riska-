@@ -23,7 +23,12 @@ public class musuh extends Actor
         
     public void gerak()
     {
+        world w = getWold();
         move(-7);
+        if(isAtEdge())
+        {
+            w.removeObject(this);
+        }
     }
     
     public void ledakan()

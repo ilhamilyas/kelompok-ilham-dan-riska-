@@ -35,8 +35,8 @@ public class latar extends World
         
     }
 
-    public void tambah(){
-        Skor.add(5);
+    public void tambah(){}
+       Skor.add(5);
 <<<<<<< HEAD
     }  
 
