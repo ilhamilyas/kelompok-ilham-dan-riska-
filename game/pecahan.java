@@ -16,6 +16,7 @@ public class pecahan extends Actor
         if(vx==0)vx=1;
         if(vy==0)vy=1;
         
+        
     }
     public void act() 
     {
@@ -23,6 +24,11 @@ public class pecahan extends Actor
         setRotation(getRotation()+rot);
         if(getX()<-200 || getY()<-200|| getX()>getWorld().getWidth()+200 || getY()>getWorld().getHeight()+200){
         getWorld().removeObject(this);
+        }
+        World w = getWorld();
+        if(isAtEdge())
+        {
+            w.removeObject(this);
         }
     }    
 }
