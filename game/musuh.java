@@ -18,12 +18,17 @@ public class musuh extends Actor
         //removeTouching(ufo.class);
         pecah();
         latar my =(latar)getWorld();
-        if (isAtEdge())toRemove=true;
+        if (isAtEdge())toRemove=false;
     }
         
     public void gerak()
     {
+        World w = getWorld();
         move(-7);
+        if(isAtEdge())
+        {
+            w.removeObject(this);
+        }
     }
     
     public void ledakan()
