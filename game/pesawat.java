@@ -8,22 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class pesawat extends Actor
 {
-    /**
-     * Act - do whatever the pesawat wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+   private int jeda=0;
+   private boolean toRemove=false;
+   int skor;
+   
     public void act() 
     {
-<<<<<<< HEAD
-        // Add your action code here.
-        mover(); //call a method
-    }    
-    public void mover()
-    {
-        if (Greenfoot.isKeyDown("Up"))
-        {
-            setLocation(getX(),getY()-10);
-=======
        
              
          tembak();
@@ -62,11 +52,8 @@ public class pesawat extends Actor
             if(jeda>0)jeda--;
             if(jeda==1) getWorld().addObject(new peluru(),getX()+50,getY());
             if(jeda==0)jeda=5;
->>>>>>> 637744871217aca2f65cb05ecfc832e07ae00fa6
         }
-        if (Greenfoot.isKeyDown("Down"))
-        {
-             setLocation(getX(),getY()+10);
-            }
-}
+    }
+    
+
 }
