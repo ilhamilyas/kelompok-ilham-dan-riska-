@@ -19,6 +19,7 @@ public class musuh extends Actor
         pecah();
         latar my =(latar)getWorld();
         if (isAtEdge())toRemove=false;
+        Greenfoot.playSound("ledakan1.mp3");
     }
         
     public void gerak()
