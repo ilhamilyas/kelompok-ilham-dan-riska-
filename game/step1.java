@@ -18,6 +18,7 @@ public class step1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 500, 1); 
         
-        addObject (new next(), 720,420);
+        addObject (new back(), 80,440);
+        addObject (new next(), 720,440);
     }
 }
