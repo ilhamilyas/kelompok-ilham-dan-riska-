@@ -51,8 +51,13 @@ public class pesawat extends Actor
             if (Greenfoot.isKeyDown("space")){
             if(jeda>0)jeda--;
             if(jeda==1) getWorld().addObject(new peluru(),getX()+50,getY());
+<<<<<<< HEAD
             if(jeda==0)jeda=5;
             Greenfoot.playSound("tembak0.mp3");
+=======
+            if(jeda==0)jeda=20;
+            Greenfoot.playSound("tembakan.mp3");
+>>>>>>> 6242bc4b8b58d6fccbb1d1dab83845be5f5d53e8
         }
     }
     
