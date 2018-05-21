@@ -8,7 +8,8 @@ public class playagain extends Actor
     {
     if (Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new step1());
+            Greenfoot.stop();
+            
             
         }
 }
