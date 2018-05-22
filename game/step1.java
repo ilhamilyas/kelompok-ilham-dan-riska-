@@ -20,5 +20,6 @@ public class step1 extends World
         
         addObject (new back(), 80,440);
         addObject (new next(), 720,440);
+        
     }
 }

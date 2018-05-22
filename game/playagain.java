@@ -8,7 +8,7 @@ public class playagain extends Actor
     {
     if (Greenfoot.mouseClicked(this))
         {
-            Greenfoot.stop();
+            Greenfoot.setWorld(new latar());
             
             
         }

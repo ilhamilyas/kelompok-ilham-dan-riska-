@@ -3,10 +3,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class skor extends Actor
 {
-    private int value = 0;
+    public int value = 0;
     private int target = 0;
     private String text;
     private int stringLength;
+    private int total=0;
     
     public skor()
     {
@@ -50,11 +51,14 @@ public class skor extends Actor
     {
         return value;
     }
-     private void updateImage()
+     public void updateImage()
     {
         GreenfootImage image = getImage();
         image.clear();
         image.drawString(text + value, 1, 18);
         
     }  
+    
+       
+    
 }

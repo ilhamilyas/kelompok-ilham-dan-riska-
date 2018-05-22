@@ -5,6 +5,8 @@ public class latar extends World
 {
     skor Skor = new skor("skor: "); 
     private int jeda=0;
+    private int batas=0;
+    
     public latar()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -26,8 +28,18 @@ public class latar extends World
         }
         
     }
+   
     public void tambah(){
         Skor.add(5);
+        
+        if (Skor.value == 20)
+        {
+            Greenfoot.stop();
+            Greenfoot.setWorld(new menang());
+        
+        }
+    
+        
     
     }
     

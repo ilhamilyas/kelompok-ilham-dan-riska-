@@ -19,5 +19,6 @@ public class menuutama extends World
         super(800, 500, 1); 
         
         addObject (new btnmulai(), 400,410);
+        
     }
 }
